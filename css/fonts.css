@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('/fonts/Calibri.eot');
+    src: url('/fonts/Calibri.eot') format('embedded-opentype'),
+         url('/fonts/Calibri.woff2') format('woff2'),
+         url('/fonts/Calibri.woff') format('woff'),
+         url('/fonts/Calibri.ttf') format('truetype'),
+         url('/fonts/Calibri.svg#Calibri') format('svg');
+}
+
+@font-face {
+    font-family: 'impact';
+    src: url('/fonts/impact.eot');
+    src: url('/fonts/impact.eot') format('embedded-opentype'),
+         url('/fonts/impact.woff2') format('woff2'),
+         url('/fonts/impact.woff') format('woff'),
+         url('/fonts/impact.ttf') format('truetype'),
+         url('/fonts/impact.svg#impact') format('svg');
+}

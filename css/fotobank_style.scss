@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Calibri';
+    src: url('/fonts/Calibri.eot');
+    src: url('/fonts/Calibri.eot') format('embedded-opentype'),
+         url('/fonts/Calibri.woff2') format('woff2'),
+         url('/fonts/Calibri.woff') format('woff'),
+         url('/fonts/Calibri.ttf') format('truetype'),
+         url('/fonts/Calibri.svg#Calibri') format('svg');
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    .head-back {
+        width: 100%;
+        height: 50px;
+        background: url("/img/head_back.png") repeat-x;
+    }
+    
+    .logo-wrap {
+        width: 250px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .menu {
+        display: inline-block;
+        text-align: center;
+        
+        a {
+           width: 200px;
+           height: 50px;
+           color: #fff;
+           font: {
+               family: 'Calibri', sans-serif;
+               size: 20px;
+           }
+           display: table-cell;
+           vertical-align: middle;
+            
+            
+            
+            &:hover {
+                background: #6f6f6e;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .search-wrap {
+        width: 260px;
+        float: right;
+        padding: 8px 0px;
+        
+        form {float: right;}
+        
+        .srch-btn {
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            display: block;
+            width: 25px;    
+            height: 25px;
+        }
+        
+        .search-btn {
+            width: 25px;
+            height: 25px;
+            border: none;
+            background: url("/img/search.png");
+        }
+        
+        .search-main {
+            float: right;
+            width: 230px;
+            height: 34px;
+        }
+    }
+}
+
+//Slider
+.slider-sect {
+    margin-top: 15px;
+    
+    .slider {
+        position: relative;
+        
+        .nav {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 160px;
+            height: 40px;
+            background: rgba(99, 99, 98, 0.6);
+            z-index: 999999;
+        }
+    } 
+}
+
+//Content
+.content-sect {
+    .content {
+        width: 100%;
+        border: 5px #e0e0e0 solid;
+        margin-top: 37px;
+        min-height: 300px;
+        position: relative;
+        padding: 29px 20px 0px 29px;
+        color: #636362;
+        
+        .content-title {
+            position: absolute;
+            top: -26px;
+            background: #fff;
+            display: inline-block;
+            padding: 0px 10px;
+            left: 21px;
+            font: {
+                family: "impact", sans-serif;
+                size: 28px;
+            }
+        }
+        
+        p {
+            word-spacing: 4px;
+            font: {
+                family: "Calibri", sans-serif;
+                size: 16px;
+            }
+            margin: 0 0 26px;
+        
+        &:last-child {
+            font-weight: 600;
+        }
+        }
+        
+    } 
+}
+
+//Examples 
+.example-sect {
+    .container-fluid {
+        background: #474747;
+        margin-top: 37px;
+    }
+    
+    .example-wrap {
+        min-height: 700px;
+    }
+}
