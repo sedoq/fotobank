@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/fotobank_style.css" />
     <link rel="stylesheet" href="/js/nivo-slider/nivo-slider.css" type="text/css" /> 
+    <link rel="stylesheet" href="/js/nivo-slider/themes/default/default.css" type="text/css" /> 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
     <script type="text/javascript"> 
-$(window).load(function() {
-    $('#slider').nivoSlider({
-       controlNav: false, 
-    }); 
-}); 
-</script>
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+               controlNav: true, 
+            }); 
+        }); 
+    </script>
 </head>
 <body>
 <header>
@@ -32,9 +37,27 @@ $(window).load(function() {
                             <a href="/"><img src="img/logo.png" alt="Фотобанк"/></a>
                         </div>
                         <div class="menu">
-                            <a href="#">Выбрать</a>
-                            <a href="#">Скачать</a>
-                            <a href="#">Заказать</a>
+                            <nav class="navbar navbar-default">
+                            <div>
+                                <div class="navbar-header">
+                                <span class="nav-title">Каталог товарів</span>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                    <li><a href="#" title="#" >Выбрать</a></li>
+                                    <li><a href="#" title="#" >Скачать</a></li>
+                                    <li><a href="#" title="#" >Заказать</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </nav>
+
                         </div>
                         <div class="search-wrap">
                             <form action="" method="POST">
@@ -56,10 +79,14 @@ $(window).load(function() {
 <div class="slider-sect">
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slider">
-               <div id="slider" class="nivoSlider">
-                <img src="/img/banner.png" alt="" />
-                <img src="/img/banner.png" alt="" />
-            </div>
+               <div id="slider" class="theme-default">
+                   <a href="#"><img src="/img/banner.png" alt="" /></a>
+                   <a href="#"><img src="/img/banner2.png" alt="" /></a>
+                   <a href="#"><img src="/img/banner.png" alt="" /></a>
+                   <a href="#"><img src="/img/banner2.png" alt="" /></a>
+                   <a href="#"><img src="/img/banner.png" alt="" /></a>
+                   <a href="#"><img src="/img/banner2.png" alt="" /></a>
+               </div>
         </div>
     </div>
 </div>
@@ -87,15 +114,57 @@ $(window).load(function() {
     <div class="container-fluid">
         <div class="container">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="example-wrap">
-
+               <div class="row">
+                <div class="example-wrap row">
+                    <span class="title">ПРИМЕРЫ ИЗОБРАЖЕНИЙ В ДЕКОРЕ</span>
+                    <ul >
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="shkaf"><span>Фотопечать для шкафов-купе</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="shkaf2"><span>Трафареты для шкафов-купе</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="shkaf3"><span>Наклейки для стекол-зеркал</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="kitchen"><span>Фотопечать для кухонных фартухов</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="fotooboi"><span>Текстурированные фотообои</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="pol"><span>Фотопечать для полов</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="trafaret"><span>Многоразовые трафареты</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="stena"><span>Трафареты, наклейки для стен</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="holodilnik"><span>Фотопечать для холодильников</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="table"><span>Фотопечать для столов</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="kartina"><span>Картины на холсте</span></a></li>
+                        <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#" id="mirror"><span>Трафареты для зеркал</span></a></li>
+                    </ul>
                 </div>
+            </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="ft-content-sect">
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                В нашем фотобанке собраны <a href="#">31 257 фотоизображений и векторных изображений</a> для декорирования интерьеров, которые можно увеличить до 
+                больших размеров без существенной потери качества. Все изображения оптимизируются нами под нанесение на любую поверхность <br class="visible-lg"/>
+                всевозможных предметов в быту.
+            </p>
+            <p>
+                Если вы не нашли подходящего для себя изображения в наших каталогах, у вас есть возможность найти изображение в известных фотобанках  
+                <a href="#">www.shutterstock.com</a>, <a href="#">www.istockphoto.com</a>, <a href="#">www.ru.depositphotos.com</a>, <a href="#">www.fotolia.com</a>. Для заказа продукции по изображениям из <br class="visible-lg"/>
+                фотобанков, вам достаточно сохранить привью найденного изображения, и визуализировать его в наших конструкторах интерьеров. Далее 
+                заказываете продукцию у наших дилеров.
+            </p>
+        </div>
+    </div>
+</div>
 
-<script src="/js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <span class="copyright">Fotobank.biz 2014-2016</span>
+        </div>
+    </div>
+</footer>
+
+
+
 </body>
 </html>
