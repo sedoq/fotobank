@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Calibri';
-  src: url("/fonts/Calibri.eot");
-  src: url("/fonts/Calibri.eot") format("embedded-opentype"), url("/fonts/Calibri.woff2") format("woff2"), url("/fonts/Calibri.woff") format("woff"), url("/fonts/Calibri.ttf") format("truetype"), url("/fonts/Calibri.svg#Calibri") format("svg");
-}
 img {
   max-width: 100%;
   height: auto;
@@ -343,7 +338,26 @@ footer .container-fluid span.copyright {
   clear: both;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu li a {
+    width: 130px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .logo-wrap {
+    width: 200px;
+  }
+  header .search-wrap {
+    width: 175px;
+  }
+  header .search-wrap input[type="text"] {
+    width: 160px;
+  }
+  header .menu li a {
+    width: 100px;
+  }
+}
+@media (min-width: 768px) {
   header .nav-title {
     display: none;
   }
@@ -380,6 +394,23 @@ footer .container-fluid span.copyright {
     display: block;
     margin: 0 auto;
     width: 250px !important;
+  }
+
+  .content-sect .content .content-title {
+    position: relative;
+    margin-top: -50px;
+    padding: 0px 5px;
+    top: auto;
+    left: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 360px) {
+  .content-sect .content {
+    padding: 29px 10px 0px 10px;
+  }
+  .content-sect .content .content-title {
+    font-size: 23px;
   }
 }
 
