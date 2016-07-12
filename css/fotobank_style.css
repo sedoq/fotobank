@@ -279,8 +279,9 @@ footer .container-fluid span.copyright {
 .page-title-h1 h1 {
   color: #818180;
   font-family: 'PT Sans', sans-serif;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 600;
+  font-line-height: 1.3;
 }
 
 .links-wrapper {
@@ -336,6 +337,136 @@ footer .container-fluid span.copyright {
 
 .clear {
   clear: both;
+}
+
+.labels {
+  padding-top: 38px;
+}
+.labels label {
+  color: #818180;
+  margin-left: -32px;
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+.labels span.data {
+  color: #484848;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sender > .row > div {
+  padding-top: 22px;
+}
+
+.sender-any > .row > div {
+  padding-top: 30px;
+}
+
+.inputs {
+  margin-left: -9px;
+  padding-top: 38px;
+}
+.inputs input[type="text"], .inputs textarea {
+  color: #818180;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
+.inputs input[type="text"] {
+  border-radius: 10px;
+  border: 1px solid #9e5e5e;
+  width: 401px;
+  height: 36px;
+  padding: 0px 10px;
+}
+.inputs textarea {
+  resize: none;
+  border: 1px solid #9e5e5e;
+  border-radius: 10px;
+  width: 400px;
+  height: 196px;
+  padding: 0px 10px;
+  line-height: 1.8;
+}
+.inputs input.error-field {
+  border: 1px #ff0000 solid;
+}
+
+.validate {
+  padding-top: 38px;
+  padding-left: 45px;
+}
+.validate span {
+  color: #ff0000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.label-text {
+  color: #818180;
+  display: inline-block;
+  height: 36px;
+  float: left;
+  margin-right: 33px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.file-name {
+  display: inline-block;
+  float: left;
+  color: #818180;
+  margin-left: 26px;
+  padding-top: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+}
+
+.files-block {
+  padding-left: 18px;
+  margin-top: 34px;
+}
+.files-block .upload-btn {
+  width: 140px;
+  height: 36px;
+  border: none;
+  float: left;
+  background-image: url("/img/up_btn_sprite.png");
+}
+.files-block .upload-btn:hover {
+  background-position: -140px 0px;
+}
+.files-block .upload-btn:focus {
+  background-position: -280px 0px;
+}
+
+.capcha-block {
+  margin-top: 53px;
+}
+.capcha-block .capcha-text {
+  color: #818180;
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 21px;
+}
+.capcha-block input[type="text"] {
+  border: 1px #7d7d7d solid;
+  border-radius: 10px;
+  width: 161px;
+  height: 36px;
+  float: left;
+}
+.capcha-block .capcha-form {
+  width: auto;
+  height: 80px;
+  float: left;
+  margin: -24px 0px 0px 19px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
