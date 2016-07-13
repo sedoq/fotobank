@@ -95,14 +95,14 @@
             <form action="order.html" method="get">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 receiver">
                 <div class="row">
-                    <div class="col-lg-3 labels">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 labels">
                         <span class="data">Данные получателя:</span>
                     </div>                   
                    
-                    <div class="col-lg-1 labels">
+                    <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 labels">
                         <label for="rc-email">*Email:</label>
                     </div>
-                    <div class="col-lg-4 inputs">
+                    <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12 inputs">
                         <input id="rc-email" type="text" />
                     </div>
                     <div class="col-lg-5 validate"><span id="rc-email-val"></span></div>
@@ -111,17 +111,17 @@
             
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sender">
                 <div class="row">
-                    <div class="col-lg-3 labels">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 labels">
                         <span class="data">Данные отправителя:</span>
                     </div>                   
                    
-                    <div class="col-lg-1 labels">
+                    <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 labels">
                         <label for="sd-fio">*ФИО:</label>
                     </div>
-                    <div class="col-lg-4 inputs">
+                    <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12 inputs">
                         <input class="error" id="sd-fio" type="text" />
                     </div>
-                    <div class="col-lg-4 validate"><span id="sd-fio-val">Строка не заполнена</span></div>
+                    <div class="col-lg-4 validate"><span id="sd-fio-val"></span></div>
                 </div>
             </div>
             
@@ -130,10 +130,10 @@
                     <div class="col-lg-3 labels">
                     </div>                   
                    
-                    <div class="col-lg-1 labels">
+                    <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 labels">
                         <label for="sd-fio">*Телефон:</label>
                     </div>
-                    <div class="col-lg-4 inputs">
+                    <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12 inputs">
                         <input id="sd-phone" type="text" />
                     </div>
                     <div class="col-lg-4 validate"><span id="sd-phone-val"></span></div>
@@ -145,10 +145,10 @@
                     <div class="col-lg-3 labels">
                     </div>                   
                    
-                    <div class="col-lg-1 labels">
+                    <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 labels">
                         <label for="sd-mail">&nbsp;Email:</label>
                     </div>
-                    <div class="col-lg-4 inputs">
+                    <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12 inputs">
                         <input id="sd-mail" type="text" />
                     </div>
                     <div class="col-lg-4 validate"><span id="sd-mail-val"></span></div>
@@ -160,11 +160,19 @@
                     <div class="col-lg-3 labels">
                     </div>                   
                    
-                    <div class="col-lg-1 labels">
+                    <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 labels">
                         <label for="sd-text">&nbsp;Описание:</label>
                     </div>
-                    <div class="col-lg-4 inputs">
-                        <textarea name="text" id="sd-text" cols="45" rows="8"></textarea>
+                    <div class="col-lg-4 col-md-7 col-sm-8 col-xs-12 inputs">
+                        <textarea name="text" id="sd-text" cols="45" rows="8">
+Номер изображения:
+Размеры
+Высота в мм:
+Ширина в мм:
+Кол-во дверей (частей):
+Комментарии (тут можно указать текстуру
+или описать особенности подготовки эскиза):
+                        </textarea>
                     </div>
                     <div class="col-lg-4 validate"><span id="sd-text-val"></span></div>
                 </div>
@@ -182,7 +190,12 @@
                 <input type="text" />
                 <div class="capcha-form">
                     <img src="/img/capcha.png" alt="" />
+                    <a href="#" class="re_capcha"></a>
                 </div>
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subm-bl">
+                <button class="send-order"></button>
             </div>
             
             </form>
@@ -191,3 +204,9 @@
         </div>
     </div>
 </div>
+
+
+
+
+</body>
+</html>

@@ -454,13 +454,16 @@ footer {
     }
     
     textarea {
-        resize: none;
-        border: 1px solid rgb(158, 94, 94);
-        border-radius: 10px;
-        width: 400px;
-        height: 196px;
-        padding: 0px 10px;
-        line-height: 1.8;
+           resize: none;
+            border: 1px solid #9e5e5e;
+            border-radius: 10px;
+            width: 400px;
+            height: 196px;
+            padding: 0px 10px;
+            line-height: 1.4;
+            font-size: 17px;
+            padding-top: 3px;
+        
     }
     
     input.error-field {
@@ -474,6 +477,8 @@ footer {
     
     span {
         color: #ff0000;
+        position: relative;
+        top: 4px;
         font: {
             family: 'PT Sans', sans-serif;
             size: 17px;
@@ -555,6 +560,7 @@ footer {
         width: 161px;
         height: 36px;
         float: left;
+        padding: 0 10px;
     }
     
     .capcha-form {
@@ -562,9 +568,72 @@ footer {
         height: 80px;
         float: left;
         margin: -24px 0px 0px 19px;
+    
+        .re_capcha {
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            left: 18px;
+            background: {
+                image: url("/img/re_capcha.png");
+            }
+        }
     }
 }
 
+.subm-bl {
+    margin: 40px auto;
+        
+    .send-order {
+        width: 220px;
+        height: 42px;
+        border: none;
+        position: relative;
+        left: 372px;
+        background: {
+            image: url("/img/send_btn.png");
+        }
+        
+        &:hover {
+            background-position: -220px 0px;
+        }
+        
+        &:focus {
+            background-position: -440px 0px;
+        }
+    }
+}
+
+
+@media(max-width: 1199px) {
+    .inputs {
+        margin-left: 0px;
+        padding-top: 5px;
+        
+        input[type="text"], textarea {
+            width: 100%;
+        }
+    }
+    
+    .labels {
+        padding-top: 5px;
+        label {
+            margin-left: 0px;
+            margin-right: 15px;
+        }
+    }
+    
+    .subm-bl {
+        .send-order {
+            left: auto !important;
+            margin: 0 auto;
+            display: block;
+            
+        }
+    }
+}
 
 @media(min-width: 992px) and (max-width: 1199px){
     .menu {
@@ -574,6 +643,7 @@ footer {
             }
         }
     }
+    
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
@@ -598,6 +668,19 @@ footer {
         }
     }
     
+    .sender-any > .row > div {
+        padding-top: 5px;
+    }
+    
+    .sender > .row > div {
+        padding-top: 5px;
+    }
+    
+    .capcha-block {
+        .capcha-form {
+            margin: 15px 0px;
+        }
+    }
 }
 
 @media(min-width: 768px) {
@@ -636,6 +719,53 @@ footer {
                 width: 50%;
             }
         }
+    }
+    
+    .inputs {
+        input[type="text"] {
+            width: 60%;
+        }
+        
+        textarea {
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .capcha-block {
+        margin-top: 25px;
+        
+        span.capcha-text {
+            width: 100%;
+        }
+        
+        .capcha-form {
+            margin: 20px auto;
+            width: 100%;
+        }
+        
+        input[type="text"] {
+            margin-top: 15px;
+        }
+    }
+    
+    .label-text {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .sender-any > .row > div {
+        padding-top: 5px;
+    }
+    
+    .sender > .row > div {
+        padding-top: 5px;
+    }
+    
+    .data {
+        margin-top: 20px;
+        display: block;
     }
 }
 
@@ -676,6 +806,18 @@ footer {
             padding: 29px 10px 0px 10px;
              .content-title {
                font-size: 23px;
+            }
+        }
+    }
+    
+    .capcha-block {
+        input[type="text"] {
+            width: 88%;
+        }
+        
+        .capcha-form {
+            .re_capcha {
+                left: 10px;
             }
         }
     }
