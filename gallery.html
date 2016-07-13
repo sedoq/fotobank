@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/fotobank_style.css" />
+    <link rel="stylesheet" href="/js/nivo-slider/nivo-slider.css" type="text/css" /> 
+    <link rel="stylesheet" href="/js/nivo-slider/themes/default/default.css" type="text/css" /> 
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+    <script type="text/javascript"> 
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+               controlNav: true, 
+            }); 
+        }); 
+    </script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="head-back">
+                <div class="container">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="logo-wrap">
+                            <a href="/"><img src="img/logo.png" alt="Фотобанк"/></a>
+                        </div>
+                       
+                        <div class="search-wrap">
+                            <form action="" method="POST">
+                                 <div class="input-group">
+                                   <span class="input-group-btn srch-btn">
+                                        <input type="submit" class="search-btn" />
+                                    </span>
+                                    <input type="text" class="search-main" >
+                                 </div>
+                            </form>
+                        </div>
+                           
+                         <div class="menu">
+                            <nav class="navbar navbar-default">
+                            <div>
+                                <div class="navbar-header">
+                                <span class="nav-title">Каталог товарів</span>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                    <li><a href="#" title="#" >Выбрать</a></li>
+                                    <li><a href="#" title="#" >Скачать</a></li>
+                                    <li><a href="#" title="#" >Заказать</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </nav>
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</header>
+
+<div class="container">
+    <div class="col-lg-12 div col-md-12 col-md-12 col-sm-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 breadcrumbs">
+                <span class="main">Главная</span>
+                <span class="separator">/</span>
+                <a href="#">Галерея</a>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 page-title-h1">
+                <h1>Галерея</h1>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-panel">
+                <form method="post">
+                    <button class="btn-dark">Фотопечать</button>
+                    <button class="btn-dark">Трафареты</button>
+                    <select name="sel_location" id="sel_location">
+                        <option value="">Расположения</option>
+                        <option value="theme">Темы</option>
+                    </select>
+                    
+                    <select name="sel_themes" id="sel_themes">
+                        <option value="">Темы</option>
+                        <option value="theme">Темы2</option>
+                    </select>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>

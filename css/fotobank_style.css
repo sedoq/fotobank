@@ -278,10 +278,10 @@ footer .container-fluid span.copyright {
 
 .page-title-h1 h1 {
   color: #818180;
+  line-height: 1.3;
   font-family: 'PT Sans', sans-serif;
-  font-size: 33px;
+  font-size: 32px;
   font-weight: 600;
-  font-line-height: 1.3;
 }
 
 .links-wrapper {
@@ -524,6 +524,52 @@ footer .container-fluid span.copyright {
     display: block;
   }
 }
+.control-panel .btn-dark {
+  width: 120px;
+  height: 34px;
+  border: none;
+  color: #fff;
+  text-shadow: 0px -2px #383838;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  background-image: url("/img/btn-dark.png");
+  background-position: -120px 0px;
+}
+.control-panel .btn-dark:hover, .control-panel .btn-dark:focus {
+  background-position: 0px 0px;
+  padding: 0 1px 1px 0px;
+}
+.control-panel .btn-dark:first-child {
+  margin-right: 7px;
+}
+.control-panel select {
+  width: 220px;
+  height: 34px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  margin-left: 17px;
+  padding-left: 9px;
+  padding-right: 42px;
+  color: #a3a3a3;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  background-image: url("/img/select_btn.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none !important;
+}
+.control-panel select::-ms-expand {
+  display: none;
+}
+.control-panel select#sel_themes {
+  width: 200px;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu li a {
     width: 130px;
