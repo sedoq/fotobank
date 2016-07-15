@@ -3,6 +3,11 @@ img {
   height: auto;
 }
 
+.popover-img {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   font-family: 'Calibri', sans-serif;
 }
@@ -568,6 +573,163 @@ footer .container-fluid span.copyright {
 }
 .control-panel select#sel_themes {
   width: 200px;
+}
+
+.colors {
+  width: 215px;
+  height: 34px;
+  float: right;
+  display: block;
+  text-align: right;
+  line-height: 1;
+}
+.colors input[type="radio"] {
+  display: none;
+}
+.colors .colors-radio {
+  max-width: 213px;
+}
+.colors label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px #707070 solid;
+  margin-left: 4px;
+  position: relative;
+}
+.colors label#current:before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px #a4917e solid;
+  top: -5px;
+  left: -5px;
+}
+
+.current-color {
+  width: 30px;
+  height: 32px;
+  border: 2px #707070 solid;
+  display: inline-block;
+  float: left;
+}
+
+.gallery-menu {
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+.gallery-menu .menu-wrapper {
+  background: #dddddd;
+  padding-left: 0px;
+}
+.gallery-menu .menu {
+  height: 36px;
+  line-height: 2.4;
+}
+.gallery-menu .menu a {
+  color: #2d2d2d;
+  padding: 0px 18px;
+  border-right: 1px #000 solid;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+.gallery-menu .menu a.current-filter {
+  background: #fff;
+}
+
+.right-side-menu {
+  height: 36px;
+  padding-right: 7px;
+  text-align: center;
+}
+.right-side-menu .found {
+  padding-top: 8px;
+  display: inline-block;
+  font-family: "PT Sans",sans-serif;
+  font-size: 14px;
+}
+
+.filter {
+  text-align: right;
+  float: right;
+  padding: 6px 0px;
+}
+.filter label {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background: url("/img/filter.png");
+}
+.filter label.six-on-six {
+  background-position: 0px 0px;
+}
+.filter label.six-on-six:hover {
+  background-position: -23px 0px;
+}
+.filter label.four-on-four {
+  background-position: -46px 0px;
+}
+.filter label.four-on-four:hover {
+  background-position: -69px 0px;
+}
+.filter label.mosaic {
+  background-position: -92px 0px;
+}
+.filter label.mosaic:hover {
+  background-position: -115px 0px;
+}
+
+.photo-gal {
+  margin-bottom: 30px;
+  height: 255px;
+}
+.photo-gal .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.photo-gal .wrapper .photo-attr {
+  position: absolute;
+  bottom: -21px;
+  width: 100%;
+  height: 21px;
+  background: #2d2d2d;
+  opacity: 0.8;
+}
+.photo-gal .wrapper .photo-attr .fav {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: 2px 0px 0px 5px;
+  background: url("/img/img_elem.png");
+}
+.photo-gal .wrapper .photo-attr .fav:hover {
+  background-position: -16px 0px;
+}
+.photo-gal .wrapper .photo-attr .right-attr {
+  float: right;
+  padding: 3px 5px 0px 0px;
+}
+.photo-gal .wrapper .photo-attr .right-attr a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("/img/img_elem.png");
+}
+.photo-gal .wrapper .photo-attr .right-attr a.cart {
+  background-position: -67px 0px;
+}
+.photo-gal .wrapper .photo-attr .right-attr a.cart:hover {
+  background-position: -84px 0px;
+}
+.photo-gal .wrapper .photo-attr .right-attr a.constructor {
+  background-position: -33px 0px;
+}
+.photo-gal .wrapper .photo-attr .right-attr a.constructor:hover {
+  background-position: -50px 0px;
+}
+.photo-gal .wrapper:hover > .photo-attr {
+  bottom: 0px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
