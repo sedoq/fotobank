@@ -85,6 +85,8 @@ header .search-wrap .search-main {
   float: right;
   width: 230px;
   height: 34px;
+  padding-left: 10px;
+  padding-right: 45px;
 }
 
 .slider-sect {
@@ -629,7 +631,7 @@ footer .container-fluid span.copyright {
 }
 .gallery-menu .menu a {
   color: #2d2d2d;
-  padding: 0px 18px;
+  padding: 0px 15px;
   border-right: 1px #000 solid;
   font-family: 'PT Sans', sans-serif;
   font-size: 15px;
@@ -749,6 +751,7 @@ footer .container-fluid span.copyright {
   }
   header .menu li a {
     width: 100px;
+    font-size: 18px !important;
   }
 
   .sender-any > .row > div {
@@ -798,6 +801,10 @@ footer .container-fluid span.copyright {
   .inputs textarea {
     width: 80%;
   }
+
+  header .logo-wrap {
+    width: auto;
+  }
 }
 @media (max-width: 767px) {
   .capcha-block {
@@ -831,8 +838,69 @@ footer .container-fluid span.copyright {
     margin-top: 20px;
     display: block;
   }
+
+  header {
+    background: #4f4f4e;
+  }
+  header .head-back {
+    background: none;
+  }
+  header .menu {
+    width: 100%;
+    margin-top: 15px;
+  }
+  header .menu .navbar {
+    border-radius: 0px;
+    text-align: center;
+  }
+  header .menu .navbar-header {
+    text-align: right;
+  }
+  header .menu .nav-title {
+    margin: 10px 10px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #636362;
+    font-size: 19px;
+  }
+  header .menu li:before, header .menu li:after {
+    display: none;
+  }
+  header .menu li > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  header .menu li:hover {
+    background: #6f6f6e;
+  }
+  header .menu li:hover > a {
+    color: #fff !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 549px) {
+  header .logo-wrap {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 10px;
+  }
+  header .search-wrap {
+    width: 100%;
+  }
+  header .search-wrap form {
+    width: 100%;
+  }
+  header .search-wrap form .input-group {
+    width: 100%;
+  }
+  header .search-wrap form .input-group .search-main {
+    width: 100%;
+  }
+  header .menu {
+    margin: 0px;
+  }
+
   .example-sect .example-wrap ul {
     margin-left: -20px;
   }
@@ -852,6 +920,11 @@ footer .container-fluid span.copyright {
   }
 }
 @media (min-width: 320px) and (max-width: 360px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .content-sect .content {
     padding: 29px 10px 0px 10px;
   }
