@@ -263,7 +263,7 @@ header {
 .ft-content-sect {
     color: #636362;
     padding-top: 33px;
-    font {
+    font: {
         family: 'Calibri', sans-serif;
         size: 18px;
     }
@@ -308,11 +308,11 @@ footer {
     }
     
     .main, .separator {
-        color: #afafaf;
+        color: #2b2a2b;
     }
     
     a {
-        color: #2b2a2b;
+        color: #afafaf;
     }
 }
 
@@ -692,7 +692,7 @@ footer {
         text-indent: 0.01px; 
         text-overflow: '';
         -ms-appearance: none;
-        appearance: none!important;
+        appearance: none !important;
         
         &::-ms-expand {
             display: none;
@@ -712,6 +712,7 @@ footer {
         display: block;  
         text-align: right;
         line-height: 1;
+        
     
         input[type="radio"] {
             display: none;
@@ -728,6 +729,7 @@ footer {
             border: 1px #707070 solid;
             margin-left: 4px;
             position: relative;
+            cursor: pointer;
             
             &#current:before {
                 content: " "; 
@@ -894,6 +896,12 @@ footer {
 
 }
 
+@media(min-width: 1200px) {
+    #long {
+        min-height: 820px;
+    }
+}
+
 @media(min-width: 992px) and (max-width: 1199px){
     .menu {
         li {
@@ -903,6 +911,46 @@ footer {
         }
     }
     
+    .colors {
+        width: 180px;
+        
+        .current-color {
+            display: none;
+        }
+    }
+    
+    .photo-gal {
+        height: 205px;
+    }
+    
+    .right-side-menu {
+        text-align: left;
+        padding-left: 0px;
+    }
+    
+    
+}
+
+@media(max-width: 991px) {
+    .colors { 
+        display: none;
+    }
+    
+    .filter {
+        display: none;
+    }
+    
+    .photo-gal {
+        height: auto !important;
+            img {
+                width: 100%;
+                height: auto;
+            }
+    }
+    
+    .webui-popover {
+        display: none !important;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
@@ -941,6 +989,14 @@ footer {
             margin: 15px 0px;
         }
     }
+    
+    .control-panel {
+        select {
+            width: 195px !important;
+        }
+    }
+    
+
 }
 
 @media(min-width: 768px) {
